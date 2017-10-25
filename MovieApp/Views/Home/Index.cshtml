@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Rent-a-Movie</h1>
+    <p class="lead">Register customers, add movies, and rent movies from this app.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Customers", "Index", "Customers")</h2>
+        <p>
+            Click here to add new customers or see who is already one of our patrons!
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Movies", "Index", "Movies")</h2>
+        <p>See what movies we have to offer... we're always adding more!</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Rentals", "Index", "Rentals")</h2>
+        <p>Want to see who has rented a movie or add a new rental? You're in the right place!</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
